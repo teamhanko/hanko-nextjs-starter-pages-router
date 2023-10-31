@@ -5,6 +5,12 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@teamhanko/hanko-elements':
+    specifier: ^0.9.0
+    version: 0.9.0
+  jose:
+    specifier: ^5.0.1
+    version: 5.0.1
   next:
     specifier: 14.0.1
     version: 14.0.1(react-dom@18.2.0)(react@18.2.0)
@@ -62,6 +68,14 @@ packages:
     dependencies:
       regenerator-runtime: 0.14.0
     dev: true
+
+  /@denysvuika/preact-translate@0.5.0(preact@10.18.1):
+    resolution: {integrity: sha512-hcWbmA5+05JRYGPhl64kDiJ+rWLOKe4tDi0y7cXVKe+hwu6H0KphyAwLvVbCSTTtnfXvAijnEZMOf/kCsdPFrQ==}
+    peerDependencies:
+      preact: '>=10.13.0'
+    dependencies:
+      preact: 10.18.1
+    dev: false
 
   /@eslint-community/eslint-utils@4.4.0(eslint@8.52.0):
     resolution: {integrity: sha512-1/sA4dwrzBAyeUoQ6oxahHKmrZvsnLCg4RfxW3ZFGGmQkSNQPFNLV9CUEFQP1x9EYXHTo5p6xdhZM1Ne9p/AfA==}
@@ -270,6 +284,34 @@ packages:
     resolution: {integrity: sha512-E4KcWTpoLHqwPHLxidpOqQbcrZVgi0rsmmZXUle1jXmJfuIf/UWpczUJ7MZZ5tlxytgJXyp0w4PGkkeLiuIdZw==}
     dependencies:
       tslib: 2.6.2
+    dev: false
+
+  /@teamhanko/hanko-elements@0.9.0:
+    resolution: {integrity: sha512-5h8j3RtQUyJgqMquLEXOoSj037G9vrN/bm/3dMpoHbGictmNCsa1zLsFiz5DnKr59TkKnwvNErUiuPxIYYcDbg==}
+    dependencies:
+      '@denysvuika/preact-translate': 0.5.0(preact@10.18.1)
+      '@teamhanko/hanko-frontend-sdk': 0.9.0
+      '@teamhanko/preact-custom-element': 4.2.2(preact@10.18.1)
+      classnames: 2.3.2
+      preact: 10.18.1
+    dev: false
+
+  /@teamhanko/hanko-frontend-sdk@0.9.0:
+    resolution: {integrity: sha512-zUi8chayzV2c6mJiN04VEO5FhWPEDMiU47xsFsAk/YlZ8g4csOBSKp+CeQ5tBaOkbkg81KTzUZpmR9jk7dCrew==}
+    dependencies:
+      '@types/js-cookie': 3.0.5
+    dev: false
+
+  /@teamhanko/preact-custom-element@4.2.2(preact@10.18.1):
+    resolution: {integrity: sha512-3djCQr25IxQIgpidxD8J0fTQ7/hMuoa5Nmv7delQc6sX4kXgv9e/pE01cywpmGZLi69H1KUH4dmZ4cPPJQrsQQ==}
+    peerDependencies:
+      preact: 10.x
+    dependencies:
+      preact: 10.18.1
+    dev: false
+
+  /@types/js-cookie@3.0.5:
+    resolution: {integrity: sha512-dtLshqoiGRDHbHueIT9sjkd2F4tW1qPSX2xKAQK8p1e6pM+Z913GM1shv7dOqqasEMYbC5zEaClJomQe8OtQLA==}
     dev: false
 
   /@types/json5@0.0.29:
@@ -635,6 +677,10 @@ packages:
     optionalDependencies:
       fsevents: 2.3.3
     dev: true
+
+  /classnames@2.3.2:
+    resolution: {integrity: sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==}
+    dev: false
 
   /client-only@0.0.1:
     resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
@@ -1634,6 +1680,10 @@ packages:
     hasBin: true
     dev: true
 
+  /jose@5.0.1:
+    resolution: {integrity: sha512-gRVzy7s3RRdGbXmcTdlOswJOjhwPLx1ijIgAqLY6ktzFpOJxxYn4l0fC2vHaHHi4YBX/5FOL3aY+6W0cvQgpug==}
+    dev: false
+
   /js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
 
@@ -2052,6 +2102,10 @@ packages:
       nanoid: 3.3.6
       picocolors: 1.0.0
       source-map-js: 1.0.2
+
+  /preact@10.18.1:
+    resolution: {integrity: sha512-mKUD7RRkQQM6s7Rkmi7IFkoEHjuFqRQUaXamO61E6Nn7vqF/bo7EZCmSyrUnp2UWHw0O7XjZ2eeXis+m7tf4lg==}
+    dev: false
 
   /prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
