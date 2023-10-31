@@ -1,4 +1,6 @@
-import HankoProfile from "@/components/HankoProfile"
+import dynamic from 'next/dynamic';
+
+const HankoProfile = dynamic(() => import('@/components/HankoProfile'), { ssr: false })
 import { LogoutBtn } from "@/components/LogoutButton"
 
 const Dashboard = () => {
