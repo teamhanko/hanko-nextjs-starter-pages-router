@@ -4,10 +4,13 @@ import HankoProfile from "@/components/HankoProfile";
 
 export default function Profile() {
   return (
-    <div>
-      <HankoStarterInfo/>
-      <HankoStarterHeader/>
-      <HankoProfile/>
-    </div>
+    <>
+      <title>Hanko starter profile</title>
+      <div>
+        <HankoStarterInfo/>
+        <HankoStarterHeader/>
+        <HankoProfile/>
+      </div>
+    </>
   );
 }

@@ -4,10 +4,13 @@ import HankoStarterInfo from "@/hanko starter components/HankoStarterInfo";
 
 export default function Dashboard() {
   return (
-    <div>
-      <HankoStarterInfo/>
-      <HankoStarterHeader/>
-      <HankoStarterDashboard/>
-    </div>
+    <>
+      <title>Hanko starter dashboard</title>
+      <div>
+        <HankoStarterInfo/>
+        <HankoStarterHeader/>
+        <HankoStarterDashboard/>
+      </div>
+    </>
   );
 }
