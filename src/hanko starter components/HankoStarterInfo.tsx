@@ -1,7 +1,5 @@
 import React from 'react'
 
-import './hanko-starter-style.css'
-
 const HankoStarterInfo = () => {
   return (
     <div className="starterInfo">

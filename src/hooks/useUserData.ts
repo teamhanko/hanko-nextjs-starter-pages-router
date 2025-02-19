@@ -4,8 +4,8 @@ import { Hanko } from "@teamhanko/hanko-elements";
 const hankoApi = process.env.NEXT_PUBLIC_HANKO_API_URL || "";
 
 interface HankoUser {
-  id: string;w
-  email: string;
+  id: string;
+  email: string | undefined;
   loading: boolean;
   error: string | null;
 }
