@@ -23,7 +23,6 @@ const HankoStarterHeader = () => {
     </Link>
   }
 
-  
   return (
     <div className='starterHeader'>
       <div className='headerGap'></div>
