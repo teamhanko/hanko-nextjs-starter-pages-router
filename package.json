@@ -9,8 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@teamhanko/hanko-elements": "^1.4.0",
-    "next": "15.1.7",
+    "@teamhanko/hanko-elements": "^2.1.0",
+    "next": "^15.3.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
